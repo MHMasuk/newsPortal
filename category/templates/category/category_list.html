@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block banner %}
+    <div class="banner-middle">
+        <!-- banner-bottom-grids -->
+        <div class="banner-bottom-grids">
+            <!-- banner-bottom-left -->
+            <div class="col-md-8 banner-bottom-left">
+                <div class="banner-bottom-left-grids">
+
+                    <div class="single-left-grid">
+
+                        <h4></h4>
+                        {% for category in category_list %}
+                            <h5>{{ category.name }}</h5>
+                        {% endfor %}
+                        <p class="comments">Written by Orman Clark // August 4 2010 // Category One, Category Two // <a
+                                href="#">8 Comments</a></p>
+                        <img src="images/pp5.jpg" class="img-responsive" alt=""/>
+                        <p class="text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                            fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Sed posuere
+                            consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis
+                            mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                            Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Cras
+                            mattis </p>
+                        <p class="text-1">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                            fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Sed posuere
+                            consectetur est at lobortis. </p>
+                        <p class="text-2">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                            fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Sed posuere
+                            consectetur est at lobortis. </p>
+                        <div class="clearfix"></div>
+                        <p class="text-3">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                            fermentum massa justo sit </p>
+                        <p class="text-3">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                            fermentum massa justo sit </p>
+                        <p class="text-4">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                            fermentum massa justo sit </p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <!-- post -->
+                <div class="post">
+                    <h3>About the Author</h3>
+                    <div class="post-grids">
+                        <div class="col-md-4 post-left">
+                            <a href="single.html"><img src="images/pic1.jpg" alt=""/></a>
+                        </div>
+                        <div class="col-md-8 post-right">
+                            <h4><a href="single.html">Silicon Valley Shows Signs of Dot-Com Frenzy</a></h4>
+                            <p class="comments">August 4 2010, <a href="#">8 Comments</a></p>
+                            <p class="text">Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta
+                                patrioque scribentur...</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <h3>Related Posts</h3>
+                    <div class="col-md-4 post-grids-1">
+                        <div class="post-left1">
+                            <a href="single.html"><img src="images/pic2.jpg" class="img-responsive" alt=""/></a>
+                        </div>
+                        <div class="post-right1">
+                            <h4><a href="#">Fly Fishers Serving as Transports for Noxious Little Invaders</a></h4>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-md-4 post-grids-1">
+                        <div class="post-left1">
+                            <a href="single.html"><img src="images/pic6.jpg" class="img-responsive" alt=""/></a>
+                        </div>
+                        <div class="post-right1">
+                            <h4><a href="#">Fly Fishers Serving as Transports for Noxious Little Invaders</a></h4>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-md-4 post-grids-1">
+                        <div class="post-left1">
+                            <a href="single.html"><img src="images/pic4.jpg" class="img-responsive" alt=""/></a>
+                        </div>
+                        <div class="post-right1">
+                            <h4><a href="#">Fly Fishers Serving as Transports for Noxious Little Invaders</a></h4>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- //post -->
+                <div class="respond">
+                    <h4>Leave a comment</h4>
+                    <form>
+                        <input type="text" placeholder="Name" required="">
+                        <input class="name" type="text" placeholder="Email" required="">
+                        <textarea placeholder="Message" required=""></textarea>
+                        <input type="submit" value="Submit Comment">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

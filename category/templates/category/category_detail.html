@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block banner %}
+
+    <div class="banner-bottom-left-grids">
+    <h3>{{ category.name }}</h3>
+        {% for post in category.posts.all %}
+        <div class="col-md-6 banner-left-grid">
+            <a href="single.html"><img src="{{ post.image.url }}" alt=""/></a>
+            <h4><a href="{% url 'posts:single'  username=post.user.username slug=post.slug %}">{{ post.title }}</a></h4>
+            <p class="comments">August 4 2010, <a href="#">8 Comments</a></p>
+            <p class="text">{{ post.content|truncatechars:150 }}</p>
+        </div>
+        {% endfor %}
+        <div class="clearfix"></div>
+    </div>
+{% endblock %}

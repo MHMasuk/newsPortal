@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block banner %}
+    <div class="banner-middle">
+        <!-- banner-bottom-grids -->
+        <div class="banner-bottom-grids">
+            <!-- banner-bottom-left -->
+            <div class="col-md-8 banner-bottom-left">
+                <div class="banner-bottom-left-grids">
+                    <div class="single-left-grid">
+                        <h4>{{ post.title }}</h4>
+                        <p class="comments">{{ post.created_at }}<a
+                                href="#">8 Comments</a></p>
+                        <img src="{{ post.image.url }}" class="img-responsive" alt=""/>
+                        <p class="text">{{ post.content }} </p>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <!-- post -->
+                <div class="post">
+                    <h3>Related Posts</h3>
+                    <div class="col-md-4 post-grids-1">
+                        <div class="post-left1">
+                            <a href="single.html"><img src="images/pic2.jpg" class="img-responsive" alt=""/></a>
+                        </div>
+                        <div class="post-right1">
+                            <h4><a href="#">djhfsafhguafa jsdfjgsfgdsg</a></h4>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="col-md-4 post-grids-1">
+                        <div class="post-left1">
+                            <a href="single.html"><img src="images/pic6.jpg" class="img-responsive" alt=""/></a>
+                        </div>
+                        <div class="post-right1">
+                            <h4><a href="#">Fly Fishers Serving as Transports for Noxious Little Invaders</a></h4>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-md-4 post-grids-1">
+                        <div class="post-left1">
+                            <a href="single.html"><img src="images/pic4.jpg" class="img-responsive" alt=""/></a>
+                        </div>
+                        <div class="post-right1">
+                            <h4><a href="#">Fly Fishers Serving as Transports for Noxious Little Invaders</a></h4>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- //post -->
+                <div class="respond">
+                    <h4>Leave a comment</h4>
+                    <form>
+                        <input type="text" placeholder="Name" required="">
+                        <input class="name" type="text" placeholder="Email" required="">
+                        <textarea placeholder="Message" required=""></textarea>
+                        <input type="submit" value="Submit Comment">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
